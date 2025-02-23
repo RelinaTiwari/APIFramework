@@ -1,9 +1,0 @@
-How do you validate JSON schema in REST Assured?
-Method														Usage
-matchesJsonSchemaInClasspath("schema.json")		✅ Uses schema from resources folder
-matchesJsonSchema(schemaString)					✅ Uses inline schema directly in code
-.then()
-.statusCode(200)
-.body(matchesJsonSchemaInClasspath("user-schema.json"));  // ✅ Schema validation
-.then()
-.body(matchesJsonSchema(schema));  // ✅ Inline schema validation
